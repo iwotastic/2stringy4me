@@ -1,4 +1,4 @@
-# 2stringy4me
+# 2stringy4me [![Build Status](https://travis-ci.org/iwotastic/2stringy4me.svg?branch=master)](https://travis-ci.org/iwotastic/2stringy4me)
 Extends JavaScript strings 4 more fun!
 
 ## Note
