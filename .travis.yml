@@ -6,6 +6,7 @@ before_script:
 deploy:
   provider: npm
   api_key: $NPM_KEY
+  email: ianmorrill03@gmail.com
   on:
     tags: true
     branch: master
