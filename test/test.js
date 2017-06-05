@@ -30,4 +30,9 @@ describe("tooStringyForMe", function() {
       assert.equal("Hello", str);
     });
   });
+  describe("#wrap()", function() {
+    it("should wrap string correctly", function() {
+      assert.equal("<h1>Hello, World!</h1>", ts4m("Hello, World!").wrap("<h1>", "</h1>"));
+    });
+  });
 });

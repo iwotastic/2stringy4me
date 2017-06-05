@@ -21,6 +21,14 @@ var tooStringyForMe = function(string) {
     return this;
   }.bind(internal)
 
+  internal.wrap = function(bef, aft) {
+    // `bef` and `aft` should be strings that will
+    // be applied in the following way
+    this.asString = bef + this.asString + aft
+
+    return this;
+  }.bind(internal)
+
   return internal;
 }
 
