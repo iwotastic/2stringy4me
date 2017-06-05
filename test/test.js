@@ -1,6 +1,17 @@
 var assert = require("assert");
 var ts4m = require("./../index.js");
 describe("tooStringyForMe", function() {
+  it("should be recognized as a function", function() {
+    assert.equal("function", typeof ts4m);
+  });
+  it("should return an object", function() {
+    assert.equal("object", typeof ts4m("Hello"));
+  });
+  describe("#asString", function() {
+    it("should be the same as the passed string", function() {
+      assert.equal("Hello", ts4m("Hello").asString);
+    });
+  });
   describe("#forEach()", function() {
     it("should be able to create an array", function() {
       var strArr = []

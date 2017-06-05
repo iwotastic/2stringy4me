@@ -3,3 +3,9 @@ node_js:
   - "6"
 before_script:
   - npm install
+deploy:
+  provider: npm
+  api_key: $NPM_KEY
+  on:
+    tags: true
+    branch: master
